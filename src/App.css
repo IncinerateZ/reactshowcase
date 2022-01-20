@@ -1,38 +1,88 @@
+* {
+    font-family: monaco, Consolas, Lucida Console, monospace;
+    color: rgb(198, 198, 198);
+    text-decoration: none;
+}
+
+html {
+    background-color: rgb(37, 37, 38);
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.floater {
+    width: 50px;
+    height: 50px;
+    border: 1px solid grey;
+    right: 30px;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+.floater__icon {
+    width: fit-content;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.floater__content {
+    visibility: hidden;
+    overflow: hidden;
+    width: fit-content;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.floater:hover {
+    width: 300px;
+    height: 5rem;
+    transition: 0.2s;
+}
+
+.floater:hover .floater__content {
+    visibility: visible;
+}
+
+.floater:hover .floater__icon {
+    display: none;
 }

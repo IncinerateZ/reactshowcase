@@ -23,11 +23,10 @@ export default function Page() {
         <></>
     ) : (
         <div>
-            The page you are looking for no longer exists.{' '}
+            This is Page Three.{' '}
             <Link
                 to='/'
                 style={{
-                    marginRight: '15px',
                     borderBottom: '1px solid #fff',
                 }}
             >
