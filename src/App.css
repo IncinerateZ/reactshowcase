@@ -71,11 +71,12 @@ html {
     width: fit-content;
     margin-left: 20px;
     margin-top: 5px;
+    min-height: fit-content;
 }
 
 .floater:hover {
     width: 300px;
-    height: 5rem;
+    height: 7.5rem;
     transition: 0.2s;
 }
 
